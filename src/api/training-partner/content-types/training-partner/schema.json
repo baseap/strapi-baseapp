@@ -83,6 +83,12 @@
       "relation": "oneToMany",
       "target": "api::training-track.training-track",
       "mappedBy": "training_partner"
+    },
+    "instructors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::instructor.instructor",
+      "mappedBy": "training_partner"
     }
   }
 }

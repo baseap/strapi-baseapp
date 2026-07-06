@@ -1,0 +1,21 @@
+{
+  "displayName": "Media Gallery",
+  "description": "",
+  "icon": "images",
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "caption": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

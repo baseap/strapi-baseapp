@@ -1,0 +1,36 @@
+{
+  "displayName": "Pricing",
+  "description": "",
+  "icon": "coins",
+  "attributes": {
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "USD",
+        "EUR",
+        "MYR",
+        "THB",
+        "IDR",
+        "SGD"
+      ],
+      "required": true
+    },
+    "discount_amount": {
+      "type": "decimal"
+    },
+    "discount_start_date": {
+      "type": "date"
+    },
+    "discount_end_date": {
+      "type": "date"
+    },
+    "price_per_person": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

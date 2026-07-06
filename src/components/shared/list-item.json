@@ -1,0 +1,11 @@
+{
+  "displayName": "List Item",
+  "description": "",
+  "icon": "list",
+  "attributes": {
+    "item": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

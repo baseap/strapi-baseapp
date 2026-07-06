@@ -1,0 +1,28 @@
+{
+  "displayName": "Location",
+  "description": "",
+  "icon": "map-marker-alt",
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "postal_code": {
+      "type": "string"
+    }
+  }
+}

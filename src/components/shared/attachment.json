@@ -1,0 +1,21 @@
+{
+  "displayName": "Attachment",
+  "description": "",
+  "icon": "file",
+  "attributes": {
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

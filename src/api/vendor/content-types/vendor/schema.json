@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendors",
+  "info": {
+    "singularName": "vendor",
+    "pluralName": "vendors",
+    "displayName": "Vendor"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "business_name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "business_name"
+    },
+    "business_type": {
+      "type": "enumeration",
+      "enum": [
+        "individual",
+        "cooperative",
+        "sme",
+        "enterprise"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contact_email": {
+      "type": "email",
+      "required": false
+    },
+    "contact_phone": {
+      "type": "string",
+      "required": false
+    },
+    "website": {
+      "type": "string",
+      "required": false
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.location"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "training_status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "in_progress",
+        "certified"
+      ],
+      "default": "pending"
+    },
+    "certification_date": {
+      "type": "date",
+      "required": false
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "training_tracks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::training-track.training-track",
+      "inversedBy": "vendors"
+    },
+    "premium_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::premium-content.premium-content",
+      "mappedBy": "vendor"
+    }
+  }
+}

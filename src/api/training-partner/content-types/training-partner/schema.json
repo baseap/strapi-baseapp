@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_partners",
+  "info": {
+    "singularName": "training-partner",
+    "pluralName": "training-partners",
+    "displayName": "Training Partner"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "organization_name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "organization_name"
+    },
+    "organization_type": {
+      "type": "enumeration",
+      "enum": [
+        "university",
+        "polytechnic",
+        "ngo",
+        "government",
+        "private"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contact_email": {
+      "type": "email",
+      "required": false
+    },
+    "contact_phone": {
+      "type": "string",
+      "required": false
+    },
+    "website": {
+      "type": "string",
+      "required": false
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.location"
+    },
+    "accreditation": {
+      "type": "text",
+      "required": false
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "training_tracks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::training-track.training-track",
+      "mappedBy": "training_partner"
+    }
+  }
+}

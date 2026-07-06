@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_creators",
+  "info": {
+    "singularName": "content-creator",
+    "pluralName": "content-creators",
+    "displayName": "Content Creator"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "creator_type": {
+      "type": "enumeration",
+      "enum": [
+        "internal_staff",
+        "guest_contributor",
+        "partner_organization"
+      ],
+      "required": true
+    },
+    "organization": {
+      "type": "string",
+      "required": false
+    },
+    "role": {
+      "type": "string",
+      "required": false
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "premium_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::premium-content.premium-content",
+      "mappedBy": "content_creator"
+    }
+  }
+}

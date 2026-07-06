@@ -13,18 +13,22 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "label": "Name"
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "label": "Slug"
     },
     "title": {
       "type": "string",
-      "required": false
+      "required": false,
+      "label": "Title"
     },
     "bio": {
-      "type": "richtext"
+      "type": "richtext",
+      "label": "Bio"
     },
     "avatar": {
       "type": "media",
@@ -32,27 +36,33 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "label": "Avatar"
     },
     "credentials": {
       "type": "text",
-      "required": false
+      "required": false,
+      "label": "Credentials"
     },
     "specializations": {
       "type": "string",
-      "required": false
+      "required": false,
+      "label": "Specializations"
     },
     "years_experience": {
       "type": "integer",
-      "required": false
+      "required": false,
+      "label": "Years Experience"
     },
     "contact_email": {
       "type": "email",
-      "required": false
+      "required": false,
+      "label": "Contact Email"
     },
     "is_active": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "label": "Is Active"
     },
     "training_partner": {
       "type": "relation",

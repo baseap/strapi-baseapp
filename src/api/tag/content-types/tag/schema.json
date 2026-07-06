@@ -14,11 +14,13 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "label": "Name"
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "label": "Slug"
     },
     "tag_type": {
       "type": "enumeration",
@@ -28,15 +30,18 @@
         "region",
         "heritage_type"
       ],
-      "required": true
+      "required": true,
+      "label": "Tag Type"
     },
     "description": {
       "type": "text",
-      "required": false
+      "required": false,
+      "label": "Description"
     },
     "is_active": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "label": "Is Active"
     },
     "premium_contents": {
       "type": "relation",

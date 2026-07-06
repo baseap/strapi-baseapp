@@ -13,11 +13,13 @@
   "attributes": {
     "organization_name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "label": "Organization Name"
     },
     "slug": {
       "type": "uid",
-      "targetField": "organization_name"
+      "targetField": "organization_name",
+      "label": "Slug"
     },
     "organization_type": {
       "type": "enumeration",
@@ -28,10 +30,12 @@
         "government",
         "private"
       ],
-      "required": true
+      "required": true,
+      "label": "Organization Type"
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "label": "Description"
     },
     "logo": {
       "type": "media",
@@ -39,7 +43,8 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "label": "Logo"
     },
     "cover_image": {
       "type": "media",
@@ -47,19 +52,23 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "label": "Cover Image"
     },
     "contact_email": {
       "type": "email",
-      "required": false
+      "required": false,
+      "label": "Contact Email"
     },
     "contact_phone": {
       "type": "string",
-      "required": false
+      "required": false,
+      "label": "Contact Phone"
     },
     "website": {
       "type": "string",
-      "required": false
+      "required": false,
+      "label": "Website"
     },
     "location": {
       "type": "component",
@@ -68,15 +77,18 @@
     },
     "accreditation": {
       "type": "text",
-      "required": false
+      "required": false,
+      "label": "Accreditation"
     },
     "verified": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "label": "Verified"
     },
     "is_active": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "label": "Is Active"
     },
     "training_tracks": {
       "type": "relation",

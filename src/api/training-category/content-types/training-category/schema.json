@@ -24,7 +24,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Name"
     },
     "slug": {
       "type": "uid",
@@ -33,7 +34,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Slug"
     },
     "what_it_covers": {
       "type": "richtext",
@@ -41,7 +43,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "What It Covers"
     },
     "research_lineage": {
       "type": "text",
@@ -49,7 +52,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Research Lineage"
     },
     "display_order": {
       "type": "integer",
@@ -58,7 +62,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Display Order"
     },
     "is_active": {
       "type": "boolean",
@@ -67,7 +72,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Is Active"
     },
     "parent_category": {
       "type": "relation",

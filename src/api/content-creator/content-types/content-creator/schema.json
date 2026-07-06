@@ -13,11 +13,13 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "label": "Name"
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "label": "Slug"
     },
     "creator_type": {
       "type": "enumeration",
@@ -26,18 +28,23 @@
         "guest_contributor",
         "partner_organization"
       ],
-      "required": true
+      "required": true,
+      "default": "internal_staff",
+      "label": "Creator Type"
     },
     "organization": {
       "type": "string",
-      "required": false
+      "required": false,
+      "label": "Organization"
     },
     "role": {
       "type": "string",
-      "required": false
+      "required": false,
+      "label": "Role"
     },
     "bio": {
-      "type": "richtext"
+      "type": "richtext",
+      "label": "Bio"
     },
     "avatar": {
       "type": "media",
@@ -45,15 +52,18 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "label": "Avatar"
     },
     "email": {
       "type": "email",
-      "required": false
+      "required": false,
+      "label": "Email"
     },
     "is_active": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "label": "Is Active"
     },
     "premium_contents": {
       "type": "relation",

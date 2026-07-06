@@ -23,7 +23,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Title"
     },
     "slug": {
       "type": "uid",
@@ -32,7 +33,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Slug"
     },
     "description": {
       "type": "text",
@@ -40,7 +42,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Description"
     },
     "content": {
       "type": "richtext",
@@ -48,7 +51,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Content"
     },
     "cover_image": {
       "type": "media",
@@ -61,7 +65,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Cover Image"
     },
     "gallery": {
       "type": "component",
@@ -79,7 +84,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Duration Hours"
     },
     "max_capacity": {
       "type": "integer",
@@ -87,7 +93,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Max Capacity"
     },
     "difficulty_level": {
       "type": "enumeration",
@@ -100,7 +107,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Difficulty Level"
     },
     "age_suitability": {
       "type": "string",
@@ -108,7 +116,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Age Suitability"
     },
     "language": {
       "type": "string",
@@ -116,7 +125,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Language"
     },
     "location": {
       "type": "component",
@@ -185,7 +195,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Is Featured"
     },
     "is_active": {
       "type": "boolean",
@@ -194,7 +205,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Is Active"
     },
     "premium_category": {
       "type": "relation",

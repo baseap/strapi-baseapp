@@ -24,7 +24,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Name"
     },
     "slug": {
       "type": "uid",
@@ -33,7 +34,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Slug"
     },
     "description": {
       "type": "text",
@@ -41,7 +43,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "label": "Description"
     },
     "display_order": {
       "type": "integer",
@@ -50,7 +53,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Display Order"
     },
     "is_active": {
       "type": "boolean",
@@ -59,7 +63,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "label": "Is Active"
     },
     "premium_contents": {
       "type": "relation",

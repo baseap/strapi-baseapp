@@ -1,8 +1,10 @@
 {
   "collectionName": "components_shared_locations",
-  "displayName": "Location",
-  "description": "",
-  "icon": "map-marker-alt",
+  "info": {
+    "displayName": "Location",
+    "icon": "map-marker-alt",
+    "description": ""
+  },
   "attributes": {
     "address": {
       "type": "string"

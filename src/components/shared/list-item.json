@@ -1,8 +1,10 @@
 {
   "collectionName": "components_shared_list_items",
-  "displayName": "List Item",
-  "description": "",
-  "icon": "list",
+  "info": {
+    "displayName": "List Item",
+    "icon": "list",
+    "description": ""
+  },
   "attributes": {
     "item": {
       "type": "string",

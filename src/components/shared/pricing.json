@@ -1,8 +1,10 @@
 {
   "collectionName": "components_shared_pricings",
-  "displayName": "Pricing",
-  "description": "",
-  "icon": "coins",
+  "info": {
+    "displayName": "Pricing",
+    "icon": "coins",
+    "description": ""
+  },
   "attributes": {
     "amount": {
       "type": "decimal",

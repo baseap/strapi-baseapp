@@ -1,8 +1,10 @@
 {
   "collectionName": "components_shared_media_galleries",
-  "displayName": "Media Gallery",
-  "description": "",
-  "icon": "images",
+  "info": {
+    "displayName": "Media Gallery",
+    "icon": "images",
+    "description": ""
+  },
   "attributes": {
     "image": {
       "type": "media",

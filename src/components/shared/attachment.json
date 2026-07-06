@@ -1,8 +1,10 @@
 {
   "collectionName": "components_shared_attachments",
-  "displayName": "Attachment",
-  "description": "",
-  "icon": "file",
+  "info": {
+    "displayName": "Attachment",
+    "icon": "file",
+    "description": ""
+  },
   "attributes": {
     "file": {
       "type": "media",

@@ -47,13 +47,13 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::premium-content.premium-content",
-      "inversedBy": "tags"
+      "mappedBy": "tags"
     },
     "training_tracks": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::training-track.training-track",
-      "inversedBy": "tags"
+      "mappedBy": "tags"
     }
   }
 }

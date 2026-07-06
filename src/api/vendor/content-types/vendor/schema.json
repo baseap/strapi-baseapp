@@ -103,7 +103,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::training-track.training-track",
-      "inversedBy": "vendors"
+      "mappedBy": "vendors"
     },
     "premium_contents": {
       "type": "relation",

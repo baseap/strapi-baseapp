@@ -322,7 +322,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::tag.tag",
-      "inversedBy": "training_tracks",
+      "mappedBy": "training_tracks",
       "pluginOptions": {
         "i18n": {
           "localized": false

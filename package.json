@@ -8,6 +8,7 @@
     "deploy": "strapi deploy",
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
+    "seed:pillars": "node ./scripts/seed-7-pillars.js",
     "apply:labels": "node ./scripts/apply-view-labels.js",
     "start": "strapi start",
     "strapi": "strapi"

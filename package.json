@@ -10,6 +10,7 @@
     "seed:example": "node ./scripts/seed.js",
     "seed:pillars": "node ./scripts/seed-7-pillars.js",
     "apply:labels": "node ./scripts/apply-view-labels.js",
+    "permissions:public": "node ./scripts/set-public-permissions.js",
     "start": "strapi start",
     "strapi": "strapi"
   },

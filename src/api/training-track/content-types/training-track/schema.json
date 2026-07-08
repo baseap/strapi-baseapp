@@ -269,17 +269,6 @@
         }
       }
     },
-    "instructor": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::instructor.instructor",
-      "inversedBy": "training_tracks",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "training_partner": {
       "type": "relation",
       "relation": "manyToOne",
@@ -291,10 +280,10 @@
         }
       }
     },
-    "training_sessions": {
+    "training_modules": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::training-session.training-session",
+      "target": "api::training-module.training-module",
       "mappedBy": "training_track"
     },
     "prerequisites": {

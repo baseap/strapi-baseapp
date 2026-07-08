@@ -78,46 +78,23 @@
         }
       }
     },
-    "duration_hours": {
-      "type": "decimal",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "label": "Duration Hours"
-    },
-    "max_capacity": {
+    "read_time_minutes": {
       "type": "integer",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
-      "label": "Max Capacity"
+      "label": "Read Time Minutes"
     },
-    "difficulty_level": {
-      "type": "enumeration",
-      "enum": [
-        "beginner",
-        "intermediate",
-        "advanced"
-      ],
+    "published_date": {
+      "type": "date",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
-      "label": "Difficulty Level"
-    },
-    "age_suitability": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "label": "Age Suitability"
+      "label": "Published Date"
     },
     "language": {
       "type": "string",
@@ -127,46 +104,6 @@
         }
       },
       "label": "Language"
-    },
-    "location": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.location",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "pricing": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.pricing",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "what_included": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.list-item",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "what_to_bring": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.list-item",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
     },
     "faq": {
       "type": "component",
@@ -223,17 +160,6 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::content-creator.content-creator",
-      "inversedBy": "premium_contents",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "vendor": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::vendor.vendor",
       "inversedBy": "premium_contents",
       "pluginOptions": {
         "i18n": {

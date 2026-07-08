@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_modules",
+  "info": {
+    "singularName": "training-module",
+    "pluralName": "training-modules",
+    "displayName": "Training Module"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "label": "Title"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "label": "Slug"
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "label": "Description"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "label": "Order"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "label": "Is Active"
+    },
+    "pedagogy_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pedagogy-type.pedagogy-type",
+      "inversedBy": "training_modules",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "training_track": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::training-track.training-track",
+      "inversedBy": "training_modules",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "training_sessions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::training-session.training-session",
+      "mappedBy": "training_module"
+    }
+  }
+}

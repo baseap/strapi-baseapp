@@ -116,10 +116,21 @@
       },
       "label": "Is Active"
     },
-    "training_track": {
+    "training_module": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::training-track.training-track",
+      "target": "api::training-module.training-module",
+      "inversedBy": "training_sessions",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "instructors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::instructor.instructor",
       "inversedBy": "training_sessions",
       "pluginOptions": {
         "i18n": {

@@ -70,11 +70,11 @@
       "target": "api::training-partner.training-partner",
       "inversedBy": "instructors"
     },
-    "training_tracks": {
+    "training_sessions": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::training-track.training-track",
-      "mappedBy": "instructor"
+      "relation": "manyToMany",
+      "target": "api::training-session.training-session",
+      "mappedBy": "instructors"
     }
   }
 }

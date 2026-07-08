@@ -104,12 +104,6 @@
       "relation": "manyToMany",
       "target": "api::training-track.training-track",
       "mappedBy": "vendors"
-    },
-    "premium_contents": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::premium-content.premium-content",
-      "mappedBy": "vendor"
     }
   }
 }

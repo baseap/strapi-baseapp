@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedagogy_types",
+  "info": {
+    "singularName": "pedagogy-type",
+    "pluralName": "pedagogy-types",
+    "displayName": "Pedagogy Type"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "label": "Name"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "label": "Slug"
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "label": "Description"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "label": "Is Active"
+    },
+    "training_modules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::training-module.training-module",
+      "mappedBy": "pedagogy_type"
+    }
+  }
+}
